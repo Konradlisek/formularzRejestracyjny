@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 650px;
+  width: 500px;
+  border: 1px solid #333;
+  padding: 20px;
+  background-color: rgb(223, 223, 223);
+  box-shadow: 38px -9px 28px 34px rgba(0, 0, 0, 0.1);
+}
+input {
+  height: 40px;
+  width: 60%;
+  border: 1px solid black;
+  font-size: 24px;
+  padding-left: 10px;
+}
+button {
+  height: 50px;
+  width: 80%;
+  border-radius: 4px;
+  font-size: 18px;
+  text-transform: uppercase;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  transition: transform 0.6s, background-color 0.5s, box-shadow 0.8s,
+    font-weight 0.6s;
+}
+button:hover {
+  transform: scale(0.95);
+  background-color: #afaeaeb6;
+  box-shadow: 0px 0px 15px 23px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+}
+.error-text {
+  color: red;
+  font-size: 16px;
+}
+
+.error-text.goodpassword {
+  color: rgb(41, 137, 41);
+  font-size: 20px;
+}
+.data-from {
+  position: relative;
+  top: 5px;
+  font-size: 22px;
+}
